@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<!-- Latest compiled and minified Materialize CSS -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  	<!-- Icons -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  	<!-- Animate CSS -->
+  	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-wrapper container">
+			<a href="index.php" class="brand-logo">RecipEasy</a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse">
+				<i class="material-icons">menu</i>
+			</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down desktop-nav">
+				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li>
+					<a href="profile.php">Profile</a>
+				</li>
+				<li>
+					<a href="login.html">Login</a>
+				</li>
+			</ul>
+			<ul class="side-nav" id="mobile-demo">
+		        <li>
+					<a href="index.php">Home</a>
+				</li>
+				<li>
+					<a href="profile.php">Profile</a>
+				</li>
+				<li>
+					<a href="login.html">Login</a>
+				</li>
+	      	</ul>
+		</div>
+	</nav>
+
+	<div id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m6 offset-m3 center">
+					<h2 class="login">Login</h2>
+					<div class="loginAnime">
+						<form action="script2.php" method="post" id="login">
+							<div class="input-field">
+								<input type="text" name="username" id="username">
+								<label for="username">Username</label>
+							</div>
+							<p id="loginMessage"></p>
+							<div class="input-field">
+								<input type="password" name="password" id="password">
+								<label for="password">Password</label>
+							</div>
+							<button type="submit" id="loginSubmit" class="red btn btn-large waves-effect waves-light col m4 offset-m4 s6 offset-s3">Login</button>
+						</form>
+						<a href="signup.html" class="col s12 signupNow">Not a user? Sign up now!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--  jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Latest compiled and minified Materialize JavaScript -->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+  	<!-- Mobile nav -->
+  	<script src="js/init.js"></script>
+
+  	<!-- Custom Ajax -->
+  	<script src="js/ajax.js"></script>
+
+  	<!-- Custom jQuery -->
+  	<script src="js/jquery.js"></script>
+</body>
+</html>
